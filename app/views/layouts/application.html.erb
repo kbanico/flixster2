@@ -9,7 +9,8 @@
   </head>
 
   <body>
-   <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <div id="flex-content-container">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,6 +34,16 @@
 
 
 
-    <%= yield %>
+  <%= yield %>
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <b>Footer Here</b>
+      <br>
+      <%= link_to "Link", "#" %>
+    </div>
+  </div>
+
   </body>
 </html>
