@@ -16,7 +16,7 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Flixster</a>
+      <a class="navbar-brand" href="#">kjdesigns671</a>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
@@ -27,7 +27,7 @@
         <ul class="navbar-nav">
           <% if user_signed_in? %>
             <li class="nav-item">
-              <%= link_to "My Dashboard", dashboard_path %>
+              <%= link_to "My Dashboard", dashboard_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
               <%=link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
@@ -53,15 +53,18 @@
   <%= yield %>
   </div>
 
+
+
   <div id="footer">
     <div class="container">
     <div class="row">
       <div class="col-12 col-sm-3">
-        <b>Teachers</b>
+        <b>Your Mentor</b>
         <br>
         <%= link_to "Teach a Course", new_instructor_course_path %>
         <br>
         <%= link_to "My Dashboard", dashboard_path %>
+        <p>Kenneth Banico</p>
       </div>
       <div class="col-12 col-sm-3">
         <b>About</b>
@@ -76,7 +79,7 @@
       <div class="col-12 col-sm-3">
         <b>Contact</b>
         <br>
-        code4uguam@gmail.com
+        kjdesigns671@gmail.com
         <br>
         Guam USA
       </div>
@@ -93,6 +96,7 @@
     </div>
     </div>
   </div>
+
 
   <script src="http://vjs.zencdn.net/5.12.6/video.js"></script>
   <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
